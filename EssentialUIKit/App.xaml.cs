@@ -7,6 +7,7 @@ using Microsoft.AppCenter.Crashes;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 using Xamarin.Forms.Xaml;
+using EssentialUIKit.Views.Forms;
 
 namespace EssentialUIKit
 {
@@ -34,7 +35,8 @@ namespace EssentialUIKit
             InitializeComponent();
 
             // this.MainPage = new AppShell();
-            this.MainPage = new NavigationPage(new HomePage());
+            this.MainPage = new LoginPage();
+           // this.MainPage = new NavigationPage(new HomePage());
         }
 
         #endregion

@@ -3,6 +3,7 @@ using System.Runtime.Serialization;
 using EssentialUIKit.Models;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
+using EssentialUIKit.Views.Navigation;
 
 namespace EssentialUIKit.ViewModels.Catalog
 {
@@ -32,7 +33,7 @@ namespace EssentialUIKit.ViewModels.Catalog
         /// <summary>
         /// Gets or sets the property that has been bound with StackLayout, which displays the categories using ComboBox.
         /// </summary>
-        [DataMember(Name = "categories")]
+        [DataMember(Name = "categoriesAs")]
         public ObservableCollection<Category> Categories
         {
             get { return this.categories; }
@@ -87,6 +88,7 @@ namespace EssentialUIKit.ViewModels.Catalog
         private void CategorySelected(object obj)
         {
             //Do Something
+            Application.Current.MainPage.Navigation.PushModalAsync(new RestaurantPage(obj));
         }
 
         /// <summary>

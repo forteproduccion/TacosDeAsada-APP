@@ -95,11 +95,10 @@
       "sizevariants": [ "XS", "S", "M", "L", "XL" ]
     }
   ],
-
-  "categories": [
+  "categoriesAs": [
     {
-      "icon": "Electronics.png",
-      "name": "Electronics",
+      "icon": "Recipe19.png",
+      "name": "Tacos",
       "subcategories": [
 
         "Laptops",
@@ -111,97 +110,8 @@
       ]
     },
     {
-      "icon": "Fashion.png",
-      "name": "Fashion",
-      "subcategories": [
-
-        "Shirts",
-        "Skirts",
-        "Casual Wear",
-        "Jeans",
-        "Kurtis"
-
-      ]
-    },
-    {
-      "icon": "HomeFurniture.png",
-      "name": "Home and Furniture",
-      "subcategories": [
-
-        "Diwans",
-        "Sofas",
-        "Curtains"
-
-      ]
-    },
-    {
-      "icon": "PersonalCare.png",
-      "name": "Personal Care",
-      "subcategories": [
-
-        "Laptops",
-        "Mobiles",
-        "Tablets",
-        "Televisions",
-        "Printers and Monitors"
-
-      ]
-    },
-    {
-      "icon": "Books.png",
-      "name": "Books",
-      "subcategories": [
-
-        "Laptops",
-        "Mobiles",
-        "Tablets",
-        "Televisions",
-        "Printers and Monitors"
-
-      ]
-    },
-    {
-      "icon": "Clothes.png",
-      "name": "Clothes",
-      "subcategories": [
-
-        "Laptops",
-        "Mobiles",
-        "Tablets",
-        "Televisions",
-        "Printers and Monitors"
-
-      ]
-    },
-    {
-      "icon": "MobilePhones.png",
-      "name": "Mobile Phones",
-      "subcategories": [
-
-        "Laptops",
-        "Mobiles",
-        "Tablets",
-        "Televisions",
-        "Printers and Monitors"
-
-      ]
-    },
-    {
-      "icon": "Accessories.png",
-      "name": "Accessories",
-      "subcategories": [
-
-        "Laptops",
-        "Mobiles",
-        "Tablets",
-        "Televisions",
-        "Printers and Monitors"
-
-      ]
-    },
-    {
-      "icon": "Toys.png",
-      "name": "Toys and Baby",
+      "icon": "Recipe19.png",
+      "name": "Quesadillas",
       "subcategories": [
 
         "Laptops",
@@ -212,6 +122,7 @@
 
       ]
     }
+    
   ],
 
   "orders": [

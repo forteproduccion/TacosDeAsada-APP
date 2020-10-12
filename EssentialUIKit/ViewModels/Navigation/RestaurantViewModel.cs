@@ -46,7 +46,7 @@ namespace EssentialUIKit.ViewModels.Navigation
         /// <summary>
         /// Gets or sets a collection of values to be displayed in the Restaurant page.
         /// </summary>
-        [DataMember(Name = "navigationList")]
+        [DataMember(Name = "NavTacoList")]
         public ObservableCollection<Restaurant> NavigationList { get; set; }
 
         #endregion

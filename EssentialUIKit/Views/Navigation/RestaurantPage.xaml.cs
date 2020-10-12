@@ -13,7 +13,7 @@ namespace EssentialUIKit.Views.Navigation
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RestaurantPage : ContentPage
     {
-        public RestaurantPage()
+        public RestaurantPage(object obj)
         {
             InitializeComponent();
             this.BindingContext = RestaurantDataService.Instance.RestaurantViewModel;

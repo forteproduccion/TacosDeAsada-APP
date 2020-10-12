@@ -1,6 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
+using EssentialUIKit.Views.Catalog;
+using EssentialUIKit.Views.Forms;
 
 namespace EssentialUIKit.ViewModels.Forms
 {
@@ -90,6 +92,7 @@ namespace EssentialUIKit.ViewModels.Forms
         private void LoginClicked(object obj)
         {
             // Do something
+            Application.Current.MainPage.Navigation.PushModalAsync(new CategoryTilePage());
         }
 
         /// <summary>
@@ -99,6 +102,7 @@ namespace EssentialUIKit.ViewModels.Forms
         private void SignUpClicked(object obj)
         {
             // Do something
+            Application.Current.MainPage.Navigation.PushModalAsync(new SignUpPage());
         }
 
         /// <summary>
@@ -111,6 +115,7 @@ namespace EssentialUIKit.ViewModels.Forms
             label.BackgroundColor = Color.FromHex("#70FFFFFF");
             await Task.Delay(100);
             label.BackgroundColor = Color.Transparent;
+            await Application.Current.MainPage.Navigation.PushModalAsync(new ResetPasswordPage());
         }
 
         /// <summary>

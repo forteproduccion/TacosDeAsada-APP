@@ -49,6 +49,54 @@
       "category": "OTHER ALBUM"
     }
   ],
+ "NavTacoList": [
+    {
+      "itemName": "Argentino",
+      "name": "Chorizo Argentino",
+      "description": "Carne, Taco",
+      "itemDescription": "Taco de doble tortilla con chorizo argentino",
+      "itemImage": "Recipe19.png",
+      "offer": "Revisa disponibilidad",
+      "itemRating": 10
+    },
+    {
+      "itemName": "Arrachera",
+      "name": "Arrachera",
+      "description": "Carne, Taco",
+      "itemDescription": "Taco de doble tortilla con Arrachera",
+      "itemImage": "Recipe19.png",
+      "offer": "Revisa disponibilidad",
+      "itemRating": 10
+    },
+    {
+      "itemName": "Chorizo",
+      "name": "Chorizo",
+      "description": "Carne, Taco",
+      "itemDescription": "Taco de doble tortilla con chorizo",
+      "itemImage": "Recipe19.png",
+      "offer": "Revisa disponibilidad",
+      "itemRating": 10
+    },
+    {
+      "itemName": "Sirloin",
+      "name": "Sirloin ",
+      "description": "Carne, Taco",
+      "itemDescription": "Taco de doble tortilla con Sirloin ",
+      "itemImage": "Recipe19.png",
+      "offer": "Revisa disponibilidad",
+      "itemRating": 10
+    },
+    {
+      "itemName": "Aguja",
+      "name": "Aguja ",
+      "description": "Carne, Taco",
+      "itemDescription": "Taco de doble tortilla con Aguja ",
+      "itemImage": "Recipe19.png",
+      "offer": "Revisa disponibilidad",
+      "itemRating": 10
+    }
+
+  ],
   "navigationList": [
     {
       "itemName": "Hamburger",
@@ -778,7 +826,7 @@
     },
     {
       "folderName": "Files",
-      "items": "43 Items", 
+      "items": "43 Items",
       "dateTime": "14/12/2019  11:30 PM"
     }
   ]
