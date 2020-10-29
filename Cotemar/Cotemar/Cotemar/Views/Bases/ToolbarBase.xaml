@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:Renderers="clr-namespace:Cotemar.UI.Renderers" 
+    x:Class="Cotemar.Views.Bases.ToolbarBase">
+    <ContentView.Content>
+        <Frame IsClippedToBounds="True" BackgroundColor="{StaticResource NavigationBarColor}" HasShadow="true" CornerRadius="0" Padding="10" HorizontalOptions="FillAndExpand" OutlineColor="{StaticResource NavigationBarColor}" BorderColor="{StaticResource NavigationBarColor}" HeightRequest="56">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="45" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="45" />
+                </Grid.ColumnDefinitions>
+                <Renderers:IconAwesomeButtonBase BackgroundColor="{StaticResource NavigationBarColor}" BorderColor="{StaticResource NavigationBarColor}" Command="{Binding ShowDrawerCommand}" FontSize="20" TextColor="{StaticResource IconMenuColor}" Grid.Column="0" Grid.Row="0" TypeIcon="Light" Icon="Bars" />
+                <Renderers:LabelBase FontSize="13" VerticalOptions="Center" HorizontalOptions="Center" TypeFont="Primary" Grid.Column="1" Grid.Row="0" Text="{Binding TitleToolbar}" TextColor="{StaticResource TitleNavigationBarColor}" />
+            </Grid>
+        </Frame>
+    </ContentView.Content>
+</ContentView>

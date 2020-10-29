@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Bases:ContentPageBase
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Bases ="clr-namespace:Cotemar.Views.Bases"
+    HideToolbar="True"
+    BackgroundColor="White"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:Renderers="clr-namespace:Cotemar.UI.Renderers"
+    x:Class="Cotemar.Views.Session.LogInPage">
+    <Bases:ContentPageBase.ContentUI>
+        <ScrollView>
+            <Grid
+                RowSpacing="30"
+                VerticalOptions="Center"
+                Margin="36,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <ffimageloading:CachedImage 
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    HorizontalOptions="Center"
+                    WidthRequest="80" 
+                    HeightRequest="80"
+                    DownsampleToViewSize="true" 
+                    Source="Blogin.png" />
+                <Renderers:LabelBase
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    TextColor="Black"
+                    FontSize="18"
+                    TypeFont="Secondary"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Text="Inicia sesión"/>
+                <Renderers:BorderEntryBase
+                    Placeholder="Usuario"
+                    Style="{StaticResource EntryPrimary}"
+                    Grid.Column="0"
+                    Grid.Row="2"/>
+                <Renderers:BorderEntryBase
+                    IsPassword="True"
+                    Placeholder="Contraseña"
+                    Style="{StaticResource EntryPrimary}"
+                    Grid.Column="0"
+                    Grid.Row="3"/>
+                <Renderers:ButtonBase
+                    Style="{StaticResource ButtonPrimary}"
+                    Text="Iniciar sesión"
+                    Grid.Column="0"
+                    Grid.Row="4"
+                    Command="{Binding LogInCommand}"/>
+            </Grid>
+        </ScrollView>
+    </Bases:ContentPageBase.ContentUI>
+</Bases:ContentPageBase>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Bases:ContentPageBase xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Bases ="clr-namespace:Cotemar.Views.Bases"
+             xmlns:Renderers="clr-namespace:Cotemar.UI.Renderers"
+             xmlns:res="clr-namespace:Cotemar.Resources"
+             x:Class="Cotemar.Views.Popups.LoginPopup"
+             xmlns:Icons="clr-namespace:Cotemar.Views.Bases"
+             >
+             
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Transparent">
+
+            <Frame Style="{StaticResource GradientBackgroundView}" 
+                           CornerRadius="10"
+                           WidthRequest="200"
+                           MinimumHeightRequest="400">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+
+                        <Renderers:LabelBase FontSize="Medium"
+                                         Margin="10,20"
+                                         TextColor="{DynamicResource PrimaryTextColor}"
+                                         TypeFont="Primary"
+                                         HorizontalTextAlignment="Center"
+                                         Text="¿Es la primera vez que solicitas tu pasaporte sanitario?" 
+                                         VerticalOptions="Center"
+                                         Grid.Row="0"/>
+
+
+
+                <Renderers:ButtonBase
+                    Text="Si, Soy proveedor"
+                    Style="{StaticResource IconAwesomeButtonPrimary}"
+                    VerticalOptions="Center"
+                    Grid.Row="1"
+                    Margin="15,15"/>
+                    <Renderers:ButtonBase
+                    Text="Si, soy visitante"
+                    Style="{StaticResource IconAwesomeButtonPrimary}"
+                    VerticalOptions="Center"
+                    Grid.Row="2"
+                    Margin="15,15"/>
+                </Grid>
+
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</Bases:ContentPageBase>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" x:Class="Cotemar.Theme">
+
+    <!-- UNITS -->
+    <x:Int32 x:Key="BorderEntry">2</x:Int32>
+    <x:Int32 x:Key="HeightIconAwesomeLabel">35</x:Int32>
+    <x:Int32 x:Key="WidthIconAwesomeLabel">35</x:Int32>
+    <x:Int32 x:Key="HeightIconAwesome">60</x:Int32>
+    <x:Int32 x:Key="WidthIconAwesome">60</x:Int32>
+    <x:Int32 x:Key="FontSizeIconAwesomeLabel">20</x:Int32>
+    <x:Int32 x:Key="FontSizeIconAwesomeButton">35</x:Int32>
+    <x:Int32 x:Key="BoxViewWidthPrimary">90</x:Int32>
+    <x:Int32 x:Key="BoxViewHeightPrimary">5</x:Int32>
+    <Color x:Key="PageBackgroundColor">#f9f7f7</Color>
+    <Color x:Key="NavigationBarColor">#545454</Color>
+    <Color x:Key="TitleNavigationBarColor">#f9f7f7</Color>
+    <Color x:Key="IconMenuColor">#f9f7f7</Color>
+    <Color x:Key="NavigationBarBackColor">#E2E2E2</Color>
+    <Color x:Key="TitleNavigationBarBackColor">#f9f7f7</Color>
+    <Color x:Key="IconBackColor">#f9f7f7</Color>
+
+    <Color x:Key="PrimaryColor">#F5833C</Color>
+    <Color x:Key="SecondaryColor">#545454</Color>
+    <Color x:Key="PrimaryTextColor">Black</Color>
+    <Color x:Key="SecondaryTextColor">White</Color>
+    <Color x:Key="TertiaryTextColor">Gray</Color>
+
+    <x:Int32 x:Key="HeightButton">35</x:Int32>
+    <x:Double x:Key="HeightButtonDouble">35</x:Double>
+
+    <x:Int32 x:Key="HeightEntry">35</x:Int32>
+    <x:Double x:Key="HeightEntryDouble">35</x:Double>
+
+    <Color x:Key="TransparentColor">Transparent</Color>
+    <Color x:Key="ButtonMessageTextColor">#f9f7f7</Color>
+    <Color x:Key="ButtonMessageBackgroundColor">#F5833C</Color>
+    <Color x:Key="TitleMessageTextColor">Black</Color>
+    <Color x:Key="MessageTextColor">Black</Color>
+    <Color x:Key="MessageBackgroundColor">#f9f7f7</Color>
+    <Color x:Key="MasterBackgroundColor">#F5833C</Color>
+    <Color x:Key="PopupBackground">#60ffffff</Color>
+    <Color x:Key="PopupTextColor">#545454</Color>
+    <Color x:Key="StartColorPrimaryBtn">#F5833C</Color>
+    <Color x:Key="EndColorPrimaryBtn">#545454</Color>
+    <Color x:Key="ColorLabelSecondary">#F5833C</Color>
+    <Color x:Key="ColorLabelPrimary">#545454</Color>
+</ResourceDictionary>
