@@ -23,6 +23,10 @@ namespace Cotemar.UI.IconsApp
             Icons.Add(new Icon("AngleLeft", '\uf104'));
             Icons.Add(new Icon("SignOutAlt", '\uf2f5'));
             Icons.Add(new Icon("Gamepad", '\uf11b'));
+            Icons.Add(new Icon("Menu", '\uf2e7'));
+            Icons.Add(new Icon("User", '\uf007'));
+            Icons.Add(new Icon("CutBox", '\uf53d'));
+
         }
 
         /// <summary>

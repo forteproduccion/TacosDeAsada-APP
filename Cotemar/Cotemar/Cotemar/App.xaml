@@ -20,6 +20,13 @@
                 <Setter Property="CornerRadius" Value="10" />
                 <Setter Property="TypeFont" Value="Primary"/>
             </Style>
+            <Style TargetType="Renderers:ButtonBase" x:Key="ButtonSecondary">
+                <Setter Property="BackgroundColor" Value="{DynamicResource SecondaryColor}" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="HeightRequest" Value="{DynamicResource HeightButtonDouble}" />
+                <Setter Property="CornerRadius" Value="10" />
+                <Setter Property="TypeFont" Value="Primary"/>
+            </Style>
 
 
             <Style TargetType="Renderers:BorderEntryBase" x:Key="EntryPrimary">

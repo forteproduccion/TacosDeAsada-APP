@@ -25,7 +25,7 @@
     <Color x:Key="IconBackColor">#f9f7f7</Color>
 
     <Color x:Key="PrimaryColor">#F5833C</Color>
-    <Color x:Key="SecondaryColor">#545454</Color>
+    <Color x:Key="SecondaryColor">#E2E2E2</Color>
     <Color x:Key="PrimaryTextColor">Black</Color>
     <Color x:Key="SecondaryTextColor">White</Color>
     <Color x:Key="TertiaryTextColor">Gray</Color>

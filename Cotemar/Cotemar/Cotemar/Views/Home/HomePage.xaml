@@ -7,10 +7,102 @@
     BackgroundColor="White"
     xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:Renderers="clr-namespace:Cotemar.UI.Renderers"
+    xmlns:Customs="clr-namespace:Cotemar.UI.Customs"
     x:Class="Cotemar.Views.Home.HomePage">
     <Bases:ContentPageBase.ContentUI>
         <Grid>
-            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <BoxView
+                Grid.Row="0"
+                Grid.Column="0"
+                VerticalOptions="Start"
+                BackgroundColor="#F5833C"
+                HeightRequest="60"
+                ></BoxView>
+            <ffimageloading:CachedImage 
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Center"
+                    WidthRequest="120" 
+                    HeightRequest="120"
+                    DownsampleToViewSize="true" 
+                    Source="Blogin.png" />
+            <Grid
+                Grid.Row="0" 
+                Grid.Column="0"
+                VerticalOptions="Center"
+                HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="150"/>
+                </Grid.ColumnDefinitions>
+                <Renderers:IconAwesomeButtonBase
+                    Style="{StaticResource ButtonSecondary}"
+                    Margin="10,10,10,0"
+                    Icon="Menu"
+                    FontSize="70"
+                    TextColor="#F5833C"
+                    Grid.Column="0"
+                    Grid.Row="0"/>
+                <Renderers:LabelBase
+                    Text="Menú"
+                    Margin="0"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Center"
+                    />
+                <Renderers:IconAwesomeButtonBase
+                    Style="{StaticResource ButtonSecondary}"
+                    Margin="10,10,10,0"
+                    Icon="User"
+                    FontSize="70"
+                    TextColor="#F5833C"
+                    Grid.Column="1"
+                    Grid.Row="0"/>
+                <Renderers:LabelBase
+                    Text="Usuario"
+                    Margin="0"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Center"
+                    />
+                
+                <Renderers:IconAwesomeButtonBase
+                    Style="{StaticResource ButtonSecondary}"
+                    Margin="10,10,10,0"
+                    Icon="CutBox"
+                    FontSize="70"
+                    TextColor="#F5833C"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Grid.Row="2"/>
+                <Renderers:LabelBase
+                    Text="Corte"
+                    Margin="0"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Center"
+                    />
+                
+            </Grid>
+
         </Grid>
     </Bases:ContentPageBase.ContentUI>
 </Bases:ContentPageBase>
