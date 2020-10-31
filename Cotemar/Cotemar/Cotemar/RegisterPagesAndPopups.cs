@@ -8,6 +8,8 @@ using Cotemar.Views.Popups;
 using Xamarin.Forms;
 using Cotemar.Views.Session;
 using Cotemar.ViewModels.Session;
+using Cotemar.Views.Users;
+using Cotemar.ViewModels.Users;
 
 namespace Cotemar
 {
@@ -26,6 +28,10 @@ namespace Cotemar
 
             #region Pages
             containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>("Home");
+            
+            #region users
+            containerRegistry.RegisterForNavigation<UsersPage, UsersPageViewModel>("Users");
+            #endregion
             #endregion
 
             #region Popups

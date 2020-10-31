@@ -66,6 +66,7 @@
                     HorizontalOptions="Center"
                     />
                 <Renderers:IconAwesomeButtonBase
+                    Command="{Binding UsersCommand}"
                     Style="{StaticResource ButtonSecondary}"
                     Margin="10,10,10,0"
                     Icon="User"

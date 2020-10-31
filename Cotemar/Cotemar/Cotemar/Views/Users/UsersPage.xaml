@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Bases:ContentPageBase
+        xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Bases ="clr-namespace:Cotemar.Views.Bases"
+    BackgroundColor="White"
+    IsBackToolbar="True"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:Renderers="clr-namespace:Cotemar.UI.Renderers"
+    xmlns:Customs="clr-namespace:Cotemar.UI.Customs"
+    x:Class="Cotemar.Views.Users.UsersPage">
+    <Bases:ContentPageBase.ContentUI>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <ffimageloading:CachedImage 
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Center"
+                    WidthRequest="120" 
+                    HeightRequest="120"
+                    DownsampleToViewSize="true" 
+                    Source="Blogin.png" />
+            <Grid
+                Grid.Column="0"
+                Grid.Row="1"
+                VerticalOptions="Start">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Renderers:ButtonBase
+                    Style="{StaticResource ButtonPrimary}"
+                    Text="Nuevo usuario"
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Margin="30,0"/>
+
+            </Grid>
+
+            </Grid>
+    </Bases:ContentPageBase.ContentUI>
+</Bases:ContentPageBase>
