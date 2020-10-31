@@ -50,6 +50,7 @@
                     <ColumnDefinition Width="150"/>
                 </Grid.ColumnDefinitions>
                 <Renderers:IconAwesomeButtonBase
+                    Command="{Binding MenuCommand}"
                     Style="{StaticResource ButtonSecondary}"
                     Margin="10,10,10,0"
                     Icon="Menu"

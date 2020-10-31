@@ -20,7 +20,7 @@
     <Color x:Key="NavigationBarColor">#545454</Color>
     <Color x:Key="TitleNavigationBarColor">#f9f7f7</Color>
     <Color x:Key="IconMenuColor">#f9f7f7</Color>
-    <Color x:Key="NavigationBarBackColor">#E2E2E2</Color>
+    <Color x:Key="NavigationBarBackColor">#F5833C</Color>
     <Color x:Key="TitleNavigationBarBackColor">#f9f7f7</Color>
     <Color x:Key="IconBackColor">#f9f7f7</Color>
 
