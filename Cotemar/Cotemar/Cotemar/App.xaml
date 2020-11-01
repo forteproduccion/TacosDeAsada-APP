@@ -29,11 +29,12 @@
             </Style>
 
 
-            <Style TargetType="Renderers:BorderEntryBase" x:Key="EntryPrimary">
+            <Style TargetType="Entry" x:Key="EntryPrimary">
                 <Setter Property="FontSize" Value="14" />
-                <Setter Property="HeightRequest" Value="{DynamicResource HeightEntryDouble}" />
-                <Setter Property="CornerRadius" Value="10" />
-                <Setter Property="BorderColor" Value="{DynamicResource PrimaryColor}"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="PlaceholderColor" Value="{DynamicResource PrimaryColor}"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="FlexLayout.Basis" Value="60%"/>
             </Style>
 
             <Style TargetType="Renderers:ButtonBase" x:Key="TransparentButtonPrimary">
