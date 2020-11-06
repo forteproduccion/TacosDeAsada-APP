@@ -87,6 +87,12 @@
                 <Setter Property="HeightRequest" Value="80"/>
                 <Setter Property="WidthRequest" Value="80"/>
             </Style>
+            <Style TargetType="Renderers:IconAwesomeButtonBase" x:Key="ButtonBack">
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="HeightRequest" Value="80"/>
+                <Setter Property="WidthRequest" Value="80"/>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </prism:PrismApplication>
