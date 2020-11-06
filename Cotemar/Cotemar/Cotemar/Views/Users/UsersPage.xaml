@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:Bases ="clr-namespace:Cotemar.Views.Bases"
     BackgroundColor="White"
-    IsBackToolbar="True"
+    HideToolbar="True"
     xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:Renderers="clr-namespace:Cotemar.UI.Renderers"
     xmlns:Customs="clr-namespace:Cotemar.UI.Customs"
@@ -21,6 +21,13 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
+            <BoxView
+                Grid.Row="0"
+                Grid.Column="0"
+                VerticalOptions="Start"
+                BackgroundColor="{DynamicResource PrimaryColor}"
+                HeightRequest="60"
+                ></BoxView>
             <ffimageloading:CachedImage 
                     Grid.Row="0"
                     Grid.Column="0"
@@ -30,6 +37,17 @@
                     HeightRequest="120"
                     DownsampleToViewSize="true" 
                     Source="Blogin.png" />
+            <Renderers:IconAwesomeButtonBase
+                    Style="{StaticResource ButtonBack}"
+                    Command="{Binding BackToPreviousPageCommand}"
+                    Icon="Back"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    FontSize="30"
+                    HeightRequest="60"
+                    Margin="0"
+                    Grid.Column="0"
+                    Grid.Row="0"/>
             <Grid
                 Grid.Column="0"
                 Grid.Row="1"
