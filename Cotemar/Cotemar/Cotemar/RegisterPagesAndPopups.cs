@@ -10,6 +10,8 @@ using Cotemar.Views.Session;
 using Cotemar.ViewModels.Session;
 using Cotemar.Views.Users;
 using Cotemar.ViewModels.Users;
+using Cotemar.Views.Menu;
+using Cotemar.ViewModels.Menu;
 
 namespace Cotemar
 {
@@ -31,6 +33,9 @@ namespace Cotemar
             
             #region users
             containerRegistry.RegisterForNavigation<UsersPage, UsersPageViewModel>("Users");
+            #endregion
+            #region menu
+            containerRegistry.RegisterForNavigation<CustomersPage, CustomersPageViewModel>("Menu");
             #endregion
             #endregion
 

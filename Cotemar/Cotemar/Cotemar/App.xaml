@@ -81,10 +81,11 @@
                 <Setter Property="VerticalOptions" Value="Start" />
                 <Setter Property="HorizontalOptions" Value="Start" />
             </Style>
-            <Style TargetType="NavigationPage">
-                <Setter Property="HasNavigationBar" Value="False" />
-                <Setter Property="BarTextColor" Value="White" />
-                <Setter Property="BarBackgroundColor" Value="Red" />
+            <Style TargetType="Renderers:IconAwesomeButtonBase" x:Key="ButtonUser">
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}"/>
+                <Setter Property="HeightRequest" Value="80"/>
+                <Setter Property="WidthRequest" Value="80"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>

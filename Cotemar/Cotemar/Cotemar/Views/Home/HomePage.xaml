@@ -22,7 +22,7 @@
                 Grid.Row="0"
                 Grid.Column="0"
                 VerticalOptions="Start"
-                BackgroundColor="#F5833C"
+                BackgroundColor="{DynamicResource PrimaryColor}"
                 HeightRequest="60"
                 ></BoxView>
             <ffimageloading:CachedImage 
@@ -55,7 +55,7 @@
                     Margin="10,10,10,0"
                     Icon="Menu"
                     FontSize="70"
-                    TextColor="#F5833C"
+                    TextColor="{DynamicResource PrimaryColor}"
                     Grid.Column="0"
                     Grid.Row="0"/>
                 <Renderers:LabelBase
@@ -72,7 +72,7 @@
                     Margin="10,10,10,0"
                     Icon="User"
                     FontSize="70"
-                    TextColor="#F5833C"
+                    TextColor="{DynamicResource PrimaryColor}"
                     Grid.Column="1"
                     Grid.Row="0"/>
                 <Renderers:LabelBase
@@ -89,7 +89,7 @@
                     Margin="10,10,10,0"
                     Icon="CutBox"
                     FontSize="70"
-                    TextColor="#F5833C"
+                    TextColor="{DynamicResource PrimaryColor}"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Grid.Row="2"/>

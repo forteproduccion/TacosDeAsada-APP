@@ -10,6 +10,7 @@ namespace Cotemar.ViewModels.Home
     {
         #region commands
         public AsyncCommand UsersCommand { get; set; }
+        public AsyncCommand MenuCommand { get; set; }
         #endregion
         #region Constructor
         public HomePageViewModel(INavigationService navigationService, IUserDialogs userDialogsService) : base(navigationService, userDialogsService)
@@ -25,14 +26,10 @@ namespace Cotemar.ViewModels.Home
         public override void InitCommands()
         {
             base.InitCommands();
-            UsersCommand = new AsyncCommand(UsersCommandExecute);
+            UsersCommand = new AsyncCommand(async () => await NavigationService.NavigateAsync("Users"));
+            MenuCommand = new AsyncCommand(async () => await NavigationService.NavigateAsync("Menu"));
         }
         #endregion
-        #region commandExecute
-        private async Task UsersCommandExecute()
-        {
-            await NavigationService.NavigateAsync("Users");
-        }
-        #endregion
+
     }
 }

@@ -26,6 +26,9 @@ namespace Cotemar.UI.IconsApp
             Icons.Add(new Icon("Menu", '\uf2e7'));
             Icons.Add(new Icon("User", '\uf007'));
             Icons.Add(new Icon("CutBox", '\uf53d'));
+            Icons.Add(new Icon("Delete", '\uf2ed'));
+            Icons.Add(new Icon("Edit", '\uf044'));
+
 
         }
 

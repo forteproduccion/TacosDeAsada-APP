@@ -2,35 +2,64 @@
 <Grid 
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:Bases ="clr-namespace:Cotemar.Views.Bases"
-    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:Renderers="clr-namespace:Cotemar.UI.Renderers"
-    xmlns:Customs="clr-namespace:Cotemar.UI.Customs"
     xmlns:local="clr-namespace:Cotemar"
     x:Class="Cotemar.UI.ItemsCollectionView.ItemUserCollectionView"
+    BackgroundColor="{Binding BgColor}"
     Visual="Material">
     <Grid.RowDefinitions>
         <RowDefinition Height="*"/>
         <RowDefinition Height="*"/>
     </Grid.RowDefinitions>
     <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="60"/>
-        <ColumnDefinition Width="120"/>
-        <ColumnDefinition Width="30"/>
-        <ColumnDefinition Width="30"/>
+        <ColumnDefinition Width="90"/>
+        <ColumnDefinition Width="100"/>
+        <ColumnDefinition Width="80"/>
+        <ColumnDefinition Width="80"/>
     </Grid.ColumnDefinitions>
-
-    <ffimageloading:CachedImage 
-                    Grid.Row="0"
-                    Grid.Column="0"
-                    VerticalOptions="Start"
-                    HorizontalOptions="Center"
-                    WidthRequest="120" 
-                    HeightRequest="120"
-                    DownsampleToViewSize="true" 
-                    Source="{Binding image}" >
-        <ffimageloading:CachedImage.Effects>
+    <Image
+           Grid.Row="0"
+           Grid.Column="0"
+           Grid.RowSpan="2"
+           VerticalOptions="Center"
+           HorizontalOptions="Center"
+           WidthRequest="90" 
+           HeightRequest="90"
+           Source="{Binding UrlImage}">
+        <Image.Effects>
             <local:RoundEffect/>
-        </ffimageloading:CachedImage.Effects>
-    </ffimageloading:CachedImage>
+        </Image.Effects>
+    </Image>
+        <Label
+        Grid.Row="0"
+        Grid.Column="1"
+        VerticalTextAlignment="End"
+        HorizontalTextAlignment="Start"
+        Text="{Binding Name}"
+        />
+    <Label
+        Grid.Row="1"
+        Grid.Column="1"
+        VerticalTextAlignment="Start"
+        HorizontalTextAlignment="Start"
+        Text="{Binding Rol}"
+        />
+    <Renderers:IconAwesomeButtonBase
+                    Style="{StaticResource ButtonUser}"
+                    Icon="Edit"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    FontSize="30"
+                    Grid.Column="2"
+                    Grid.Row="0"
+                    Grid.RowSpan="2"/>
+    <Renderers:IconAwesomeButtonBase
+                    Style="{StaticResource ButtonUser}"
+                    Icon="Delete"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    FontSize="30"
+                    Grid.Column="3"
+                    Grid.Row="0"
+                    Grid.RowSpan="2"/>
 </Grid>
