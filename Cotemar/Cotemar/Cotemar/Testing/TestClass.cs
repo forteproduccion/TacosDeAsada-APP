@@ -32,7 +32,39 @@ namespace Cotemar.Testing
                 Rol = "usr",
                 UrlImage = "DefaultUserImage.png"
             });
-        
+            usrsTest.Add(new UsersModel()
+            {
+                Id = 1235,
+                Name = "Rosa Melchacho",
+                password = "3",
+                Rol = "usr",
+                UrlImage = "DefaultUserImage.png"
+            });
+            usrsTest.Add(new UsersModel()
+            {
+                Id = 1236,
+                Name = "Benito Camelo",
+                password = "4",
+                Rol = "usr",
+                UrlImage = "DefaultUserImage.png"
+            });
+            usrsTest.Add(new UsersModel()
+            {
+                Id = 1237,
+                Name = "Juan Pelardo",
+                password = "5",
+                Rol = "usr",
+                UrlImage = "DefaultUserImage.png"
+            });
+            usrsTest.Add(new UsersModel()
+            {
+                Id = 1238,
+                Name = "Daniel Parra",
+                password = "6",
+                Rol = "usr",
+                UrlImage = "DefaultUserImage.png"
+            });
+
         }
     }
 }
