@@ -8,12 +8,12 @@
     xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:Renderers="clr-namespace:Cotemar.UI.Renderers"
     xmlns:Customs="clr-namespace:Cotemar.UI.Customs"
-    x:Class="Cotemar.Views.Menu.CustomersPage">
+    x:Class="Cotemar.Views.Menu.MenuPage">
 
     <Bases:ContentPageBase.ContentUI>
         <Grid
             RowSpacing="10">
-            
+
             <Grid.RowDefinitions>
                 <RowDefinition Height="120"/>
                 <RowDefinition Height="*"/>
@@ -55,7 +55,7 @@
                 VerticalOptions="Start"
                 HorizontalOptions="Start"
                 ColumnSpacing="10">
-                
+
                 <Grid.RowDefinitions>
                     <RowDefinition Height="40"/>
                     <RowDefinition Height="350"/>
@@ -67,37 +67,33 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Renderers:ButtonBase
-                    Command="{Binding TableCommand}"
+                    Command="{Binding TacosCommand}"
                     Style="{StaticResource ButtonPrimary}"
                     Margin="20,0,0,0"
                     Grid.Column="0"
                     Grid.Row="0"
                     WidthRequest="100"
-                    Text="Nueva mesa"/>
+                    Text="Tacos"/>
                 <Renderers:ButtonBase
-                    Command="{Binding QuickCommand}"
+                    Command="{Binding QuekasCommand}"
                     Style="{StaticResource ButtonPrimary}"
                     Grid.Column="1"
                     Grid.Row="0"
                     WidthRequest="100"
-                    Text="Para llevar"/>
+                    Text="Quesadillas"/>
 
                 <ScrollView 
                     Grid.Column="0"
                     Grid.Row="1"
                     Grid.ColumnSpan="3">
-                    
-                    
+
+
                 </ScrollView>
-                
-     
-                    
+
+
+
             </Grid>
         </Grid>
-        
+
     </Bases:ContentPageBase.ContentUI>
 </Bases:ContentPageBase>
-    
-    
-    
-    
