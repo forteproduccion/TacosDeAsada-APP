@@ -14,4 +14,5 @@ namespace Cotemar.Models.Spartane
 
 
     }
+
 }
