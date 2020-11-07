@@ -18,6 +18,8 @@
                 <RowDefinition Height="80"/>
                 <RowDefinition Height="80"/>
                 <RowDefinition Height="80"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="60"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -78,12 +80,14 @@
                     Grid.Column="0"
                     Grid.Row="1"/>
             <Entry  
+                    Text="{Binding user.Name}"
                     Margin="36,0"
                     Placeholder="Nombre"
                     Style="{StaticResource EntryPrimary}"
                     Grid.Column="0"
                     Grid.Row="2"/>
             <Entry  
+                    Text="{Binding user.Password}"
                     Margin="36,0"
                     Placeholder="Contraseña"
                     IsPassword="True"
@@ -91,14 +95,43 @@
                     Grid.Column="0"
                     Grid.Row="3"/>
             <Entry  
+                    Text="{Binding Password}"
                     Margin="36,0"
                     Placeholder="Repetir Contraseña"
                     IsPassword="True"
                     Style="{StaticResource EntryPrimary}"
                     Grid.Column="0"
                     Grid.Row="4"/>
-           
+            <StackLayout
+                Margin="36,0"
+                Grid.Column="0"
+                Grid.Row="5"
+                Orientation="Horizontal"
+                HorizontalOptions="Center"
+                >
+                <CheckBox
+                    Color="{StaticResource PrimaryColor}"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    Margin="0"
+                    IsChecked="{Binding Admin}"/>
 
+                <Renderers:LabelBase
+                    Text="Administrador"
+                    Margin="0"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Start"
+                    />
+            </StackLayout>
+
+
+            <Renderers:ButtonBase
+                    Command="{Binding NewUserCommand}"
+                    Style="{StaticResource ButtonPrimary}"
+                    Text="Registrar usuario"
+                    Margin="80,0"
+                    Grid.Column="0"
+                    Grid.Row="6"/>
         </Grid>
     </Bases:ContentPageBase.ContentUI>
 </Bases:ContentPageBase>

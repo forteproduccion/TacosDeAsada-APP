@@ -20,7 +20,7 @@ namespace Cotemar.Testing
             {
                 Id = 1234,
                 Name = "Juan Pablo",
-                password = "1",
+                Password = "1",
                 Rol = "adm",
                 UrlImage = "DefaultUserImage.png"
             });
@@ -28,7 +28,7 @@ namespace Cotemar.Testing
             {
                 Id = 1285,
                 Name = "Juan Perez",
-                password = "2",
+                Password = "2",
                 Rol = "usr",
                 UrlImage = "DefaultUserImage.png"
             });
@@ -36,7 +36,7 @@ namespace Cotemar.Testing
             {
                 Id = 1235,
                 Name = "Rosa Melchacho",
-                password = "3",
+                Password = "3",
                 Rol = "usr",
                 UrlImage = "DefaultUserImage.png"
             });
@@ -44,7 +44,7 @@ namespace Cotemar.Testing
             {
                 Id = 1236,
                 Name = "Benito Camelo",
-                password = "4",
+                Password = "4",
                 Rol = "usr",
                 UrlImage = "DefaultUserImage.png"
             });
@@ -52,7 +52,7 @@ namespace Cotemar.Testing
             {
                 Id = 1237,
                 Name = "Juan Pelardo",
-                password = "5",
+                Password = "5",
                 Rol = "usr",
                 UrlImage = "DefaultUserImage.png"
             });
@@ -60,7 +60,7 @@ namespace Cotemar.Testing
             {
                 Id = 1238,
                 Name = "Daniel Parra",
-                password = "6",
+                Password = "6",
                 Rol = "usr",
                 UrlImage = "DefaultUserImage.png"
             });
