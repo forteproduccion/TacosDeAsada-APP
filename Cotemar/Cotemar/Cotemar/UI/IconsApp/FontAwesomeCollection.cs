@@ -29,6 +29,7 @@ namespace Cotemar.UI.IconsApp
             Icons.Add(new Icon("Delete", '\uf2ed'));
             Icons.Add(new Icon("Edit", '\uf044'));
             Icons.Add(new Icon("Back",'\uf053'));
+            Icons.Add(new Icon("Camera", '\uf030'));
 
 
         }

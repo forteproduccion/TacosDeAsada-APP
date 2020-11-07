@@ -30,9 +30,9 @@ namespace Cotemar
 
             #region Pages
             containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>("Home");
-            
             #region users
             containerRegistry.RegisterForNavigation<UsersPage, UsersPageViewModel>("Users");
+            containerRegistry.RegisterForNavigation<NewUserPage, NewUserPageViewModel>("NewUser");
             #endregion
             #region menu
             containerRegistry.RegisterForNavigation<CustomersPage, CustomersPageViewModel>("Menu");

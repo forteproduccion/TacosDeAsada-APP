@@ -61,6 +61,7 @@
                 </Grid.ColumnDefinitions>
                 <Renderers:ButtonBase
                     Style="{StaticResource ButtonPrimary}"
+                    Command="{Binding NewUser}"
                     Text="Nuevo usuario"
                     Grid.Column="0"
                     Grid.Row="0"

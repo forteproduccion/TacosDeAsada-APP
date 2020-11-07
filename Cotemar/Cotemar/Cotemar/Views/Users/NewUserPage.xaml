@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Bases:ContentPageBase 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Bases ="clr-namespace:Cotemar.Views.Bases"
+    BackgroundColor="White"
+    HideToolbar="True"
+    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:Renderers="clr-namespace:Cotemar.UI.Renderers"
+    xmlns:Customs="clr-namespace:Cotemar.UI.Customs"
+    Visual="Material"
+    x:Class="Cotemar.Views.Users.NewUserPage">
+    <Bases:ContentPageBase.ContentUI>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="80"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <BoxView
+                Grid.Row="0"
+                Grid.Column="0"
+                VerticalOptions="Start"
+                BackgroundColor="{DynamicResource PrimaryColor}"
+                HeightRequest="60"
+                ></BoxView>
+            <ffimageloading:CachedImage 
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Center"
+                    WidthRequest="120" 
+                    HeightRequest="120"
+                    DownsampleToViewSize="true" 
+                    Source="Blogin.png" />
+            <Renderers:IconAwesomeButtonBase
+                    Style="{StaticResource ButtonBack}"
+                    Command="{Binding BackToPreviousPageCommand}"
+                    Icon="Back"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    FontSize="30"
+                    HeightRequest="60"
+                    Margin="0"
+                    Grid.Column="0"
+                    Grid.Row="0"/>
+
+            <Renderers:IconAwesomeButtonBase
+                    Style="{StaticResource ButtonBack}"
+                    Command="{Binding BackToPreviousPageCommand}"
+                    Icon="Back"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Start"
+                    FontSize="30"
+                    HeightRequest="60"
+                    Margin="0"
+                    Grid.Column="0"
+                    Grid.Row="0"/>
+
+
+            <Renderers:IconAwesomeButtonBase
+                    Icon="Camera"
+                    ImageSource="{Binding Image}"
+                    FontSize="40"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    CornerRadius="10"
+                    BackgroundColor="Transparent"
+                    Margin="0"
+                    Grid.Column="0"
+                    Grid.Row="1"/>
+            <Entry  
+                    Margin="36,0"
+                    Placeholder="Nombre"
+                    Style="{StaticResource EntryPrimary}"
+                    Grid.Column="0"
+                    Grid.Row="2"/>
+            <Entry  
+                    Margin="36,0"
+                    Placeholder="Contraseña"
+                    IsPassword="True"
+                    Style="{StaticResource EntryPrimary}"
+                    Grid.Column="0"
+                    Grid.Row="3"/>
+            <Entry  
+                    Margin="36,0"
+                    Placeholder="Repetir Contraseña"
+                    IsPassword="True"
+                    Style="{StaticResource EntryPrimary}"
+                    Grid.Column="0"
+                    Grid.Row="4"/>
+           
+
+        </Grid>
+    </Bases:ContentPageBase.ContentUI>
+</Bases:ContentPageBase>
