@@ -2,7 +2,6 @@
 using Cotemar.Utils.Commands;
 using Cotemar.ViewModels.Bases;
 using Prism.Navigation;
-using System.Threading.Tasks;
 
 namespace Cotemar.ViewModels.Home
 {

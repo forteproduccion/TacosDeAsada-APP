@@ -4,11 +4,15 @@ using Acr.UserDialogs;
 using Prism.Navigation;
 using System.Collections.ObjectModel;
 using System.Drawing;
+using Cotemar.Utils.Commands;
 
 namespace Cotemar.ViewModels.Users
 {
     public class UsersPageViewModel : PageViewModelBase
     {
+        #region varCommands
+        public AsyncCommand NewUser { get; set; }
+        #endregion
         #region Collections
         public ObservableCollection<UsersModel> Users { get; set; }
         #endregion
@@ -51,6 +55,7 @@ namespace Cotemar.ViewModels.Users
         {
             base.Init();
             Users = new ObservableCollection<UsersModel>();
+            NewUser = new AsyncCommand(async () => await NavigationService.NavigateAsync("NewUser"));
             Testing();
         }
         #endregion
