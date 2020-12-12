@@ -12,6 +12,10 @@ using Cotemar.Views.Users;
 using Cotemar.ViewModels.Users;
 using Cotemar.Views.Menu;
 using Cotemar.ViewModels.Menu;
+using Cotemar.Views.CutBox;
+using Cotemar.ViewModels.CutBox;
+
+
 
 namespace Cotemar
 {
@@ -39,6 +43,10 @@ namespace Cotemar
             #region Menu
             containerRegistry.RegisterForNavigation<CustomersPage, CustomersPageViewModel>("Customers");
             containerRegistry.RegisterForNavigation<MenuPage, MenuPageViewModel>("Menu");
+            #endregion
+
+            #region CutBox
+            containerRegistry.RegisterForNavigation<CutBoxHomePage, CutBoxHomeViewModel>("CutBox");
             #endregion
 
             #endregion

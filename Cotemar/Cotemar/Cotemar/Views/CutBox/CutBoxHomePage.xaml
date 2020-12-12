@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Bases:ContentPageBase
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"    
+             xmlns:Bases ="clr-namespace:Cotemar.Views.Bases"
+             HideToolbar="True"
+             BackgroundColor="White"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:Renderers="clr-namespace:Cotemar.UI.Renderers"
+             xmlns:Customs="clr-namespace:Cotemar.UI.Customs"
+             x:Class="Cotemar.Views.CutBox.CutBoxHomePage">
+    <Bases:ContentPageBase.ContentUI>
+        <Grid>
+            
+        </Grid>
+    </Bases:ContentPageBase.ContentUI>
+</Bases:ContentPageBase>

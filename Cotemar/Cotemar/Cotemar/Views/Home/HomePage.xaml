@@ -85,6 +85,7 @@
                     />
                 
                 <Renderers:IconAwesomeButtonBase
+                    Command="{Binding CutBoxCommand}"
                     Style="{StaticResource ButtonSecondary}"
                     Margin="10,10,10,0"
                     Icon="CutBox"
