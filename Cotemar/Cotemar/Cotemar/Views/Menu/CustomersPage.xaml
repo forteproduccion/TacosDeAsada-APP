@@ -8,6 +8,7 @@
     xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
     xmlns:Renderers="clr-namespace:Cotemar.UI.Renderers"
     xmlns:Customs="clr-namespace:Cotemar.UI.Customs"
+    xmlns:Items="clr-namespace:Cotemar.UI.ItemsCollectionView"
     x:Class="Cotemar.Views.Menu.CustomersPage">
 
     <Bases:ContentPageBase.ContentUI>
@@ -81,18 +82,25 @@
                     Grid.Row="0"
                     WidthRequest="100"
                     Text="Para llevar"/>
-
-                <ScrollView 
-                    Grid.Column="0"
-                    Grid.Row="1"
-                    Grid.ColumnSpan="3">
-                    
-                    
-                </ScrollView>
-                
-     
-                    
             </Grid>
+            <CollectionView
+                Grid.Column="0"
+                Grid.Row="1"
+                Margin="20,43,20,0"
+                ItemsSource="{Binding Tables}">
+                <CollectionView.EmptyView>
+                    <Customs:EmptyTextCollectionView/>
+                </CollectionView.EmptyView>
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Items:ItemMenuCollectionView
+                    HeightRequest="70"/>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
         </Grid>
         
     </Bases:ContentPageBase.ContentUI>

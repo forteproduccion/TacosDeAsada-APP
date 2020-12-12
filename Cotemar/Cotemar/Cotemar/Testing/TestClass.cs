@@ -11,8 +11,23 @@ namespace Cotemar.Testing
     class TestClass
     {
         public List<UsersModel> usrsTest;
+
+        public List<TableModel> tablesTest;
+
+        public List<Customer> customersTest;
+
+        public List<Product> productsTest;
+
+        public ProductsModel productsModelsTest;
+
+        public Type typesTest;
         public TestClass() {
             usrsTest = new List<UsersModel>();
+            tablesTest = new List<TableModel>();
+            customersTest = new List<Customer>();
+            productsTest = new List<Product>();
+            productsModelsTest = new ProductsModel();
+            typesTest = new Type();
             initVars();
         }
         private void initVars() {
@@ -65,6 +80,47 @@ namespace Cotemar.Testing
                 UrlImage = "DefaultUserImage.png"
             });
 
+            typesTest = new Type()
+            {
+                Id = 1,
+                Name = "Carne"
+            };
+
+            productsModelsTest = new ProductsModel()
+            {
+                Id = 12,
+                Name = "Carne",
+                SelectProduct = typesTest,
+                Price = 150
+            };
+
+            productsTest.Add(new Product()
+            {
+                Type = productsModelsTest,
+                Quantity = 2
+            });
+
+            customersTest.Add(new Customer()
+            {
+                Id = 12,
+                Current = 109.12,
+                Products = productsTest,
+            });
+
+            tablesTest.Add(new TableModel()
+            {
+                Id = 1,
+                Current = 850.50,
+                Customer = customersTest,
+
+            });
+
+            tablesTest.Add(new TableModel()
+            {
+                Id = 2,
+                Current = 450.50,
+                Customer = customersTest
+            });
         }
     }
 }

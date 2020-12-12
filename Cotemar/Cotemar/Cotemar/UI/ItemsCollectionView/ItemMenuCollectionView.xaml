@@ -6,6 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     mc:Ignorable="d" 
     xmlns:Renderers="clr-namespace:Cotemar.UI.Renderers" 
+    BackgroundColor="{Binding BgColor}"
     x:Class="Cotemar.UI.ItemsCollectionView.ItemMenuCollectionView">
     <ContentView.Content>
         <Grid BackgroundColor="Transparent" HeightRequest="50">
@@ -16,8 +17,29 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            <Renderers:IconAwesomeLabelBase Grid.Column="0" Grid.Row="0" Icon="{Binding Icon}" TypeIcon="Light" Style="{StaticResource IconAwesomeLabelPrimary}" />
-            <Renderers:LabelBase Grid.Column="1" Grid.Row="0" TypeFont="Primary" Text="{Binding Title}" TextColor="White" VerticalOptions="Center" VerticalTextAlignment="Center" HorizontalOptions="Fill" />
+            <Label
+            Grid.Row="0"
+            Grid.Column="1"
+            VerticalTextAlignment="End"
+            HorizontalTextAlignment="Start"
+            Text="{Binding Id}"
+            />
+            <Label
+            Grid.Row="1"
+            Grid.Column="1"
+            VerticalTextAlignment="Start"
+            HorizontalTextAlignment="Start"
+            Text="{Binding Current}"
+            />
+            <Renderers:IconAwesomeButtonBase
+                    Style="{StaticResource ButtonUser}"
+                    Icon="Dolar"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center"
+                    FontSize="30"
+                    Grid.Column="2"
+                    Grid.Row="0"
+                    Grid.RowSpan="2"/>
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
             </Grid.GestureRecognizers>
