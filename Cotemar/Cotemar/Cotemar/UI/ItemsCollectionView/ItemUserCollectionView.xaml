@@ -46,6 +46,7 @@
         />
     <Renderers:IconAwesomeButtonBase
                     Style="{StaticResource ButtonUser}"
+                    Clicked="Edit_Click"
                     Icon="Edit"
                     HorizontalOptions="End"
                     VerticalOptions="Center"
@@ -55,6 +56,7 @@
                     Grid.RowSpan="2"/>
     <Renderers:IconAwesomeButtonBase
                     Style="{StaticResource ButtonUser}"
+                    Clicked="Delete_Click"
                     Icon="Delete"
                     HorizontalOptions="End"
                     VerticalOptions="Center"

@@ -1,10 +1,14 @@
-﻿using Cotemar.ViewModels.Bases;
+﻿#define Testing
+using Cotemar.ViewModels.Bases;
 using Cotemar.Models.Spartane;
 using Acr.UserDialogs;
 using Prism.Navigation;
 using System.Collections.ObjectModel;
 using System.Drawing;
+using System.Windows.Input;
 using Cotemar.Utils.Commands;
+using Xamarin.Forms;
+using System.Threading.Tasks;
 
 namespace Cotemar.ViewModels.Users
 {
@@ -12,13 +16,17 @@ namespace Cotemar.ViewModels.Users
     {
         #region varCommands
         public AsyncCommand NewUser { get; set; }
+        public ICommand DeleteCommand => new Command(async (item) => await DeleteCommandExecute(item));
+        public ICommand EditCommand => new Command(async (item) => await EditCommandExecute(item));
         #endregion
+
         #region Collections
         public ObservableCollection<UsersModel> Users { get; set; }
         #endregion
-        #region Testing
+
+        #if Testing
         Testing.TestClass test;
-        #endregion
+        #endif
 
         #region Constructor
         public UsersPageViewModel(INavigationService navigationService, IUserDialogs userDialogsService) : base(navigationService, userDialogsService)
@@ -29,10 +37,10 @@ namespace Cotemar.ViewModels.Users
         #region Init Methods
         private void Testing() {
             test = new Testing.TestClass();
-            Color c1 = new Color();
-            Color c2 = new Color();
-            c1 = Color.FromArgb(222,222,222);
-            c2 = Color.FromArgb(243,243,243);
+            System.Drawing.Color c1 = new System.Drawing.Color();
+            System.Drawing.Color c2 = new System.Drawing.Color();
+            c1 = System.Drawing.Color.FromArgb(222,222,222);
+            c2 = System.Drawing.Color.FromArgb(243,243,243);
             var aux = true;
             foreach (var item in test.usrsTest) 
             {
@@ -59,5 +67,28 @@ namespace Cotemar.ViewModels.Users
             Testing();
         }
         #endregion
+
+        #region Command Methods 
+        private async Task DeleteCommandExecute(object item)
+        {
+            if (item is UsersModel detail)
+            {
+
+                var request = await Application.Current.MainPage.DisplayAlert("Alerta", "¿Está seguro de eliminar a "+detail.Name+"?", "Aceptar", "Calcelar");
+                if (request)
+                {
+
+                }
+            }
+        }
+        private async Task EditCommandExecute(object item)
+        {
+            if (item is UsersModel detail)
+            {
+                
+            }
+        }
+
+        #endregion 
     }
 }

@@ -16,6 +16,7 @@ namespace Cotemar.ViewModels.Users
         public bool Admin { get; set; } 
         public string Password { get; set; } 
         #endregion
+
         #region VarCommands
         public AsyncCommand NewUserCommand { get; set; }
         #endregion
@@ -43,6 +44,7 @@ namespace Cotemar.ViewModels.Users
             NewUserCommand = new AsyncCommand(NewUserCommandExcecute);
         }
         #endregion
+
         #region CommandsMethods
         public async Task NewUserCommandExcecute()
         {

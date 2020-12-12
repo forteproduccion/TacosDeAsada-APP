@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Bases:ContentPageBase
         xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:Bases ="clr-namespace:Cotemar.Views.Bases"
-    BackgroundColor="White"
-    HideToolbar="True"
-    xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-    xmlns:Renderers="clr-namespace:Cotemar.UI.Renderers"
-    xmlns:Customs="clr-namespace:Cotemar.UI.Customs"
-    xmlns:Items="clr-namespace:Cotemar.UI.ItemsCollectionView"
-    x:Class="Cotemar.Views.Users.UsersPage">
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        xmlns:Bases ="clr-namespace:Cotemar.Views.Bases"
+        BackgroundColor="White"
+        HideToolbar="True"
+        x:Name="RegUser"
+        xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+        xmlns:Renderers="clr-namespace:Cotemar.UI.Renderers"
+        xmlns:Customs="clr-namespace:Cotemar.UI.Customs"
+        xmlns:Items="clr-namespace:Cotemar.UI.ItemsCollectionView"
+        x:Class="Cotemar.Views.Users.UsersPage">
     <Bases:ContentPageBase.ContentUI>
         <Grid>
             <Grid.RowDefinitions>
@@ -82,6 +83,8 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Items:ItemUserCollectionView
+                            DeleteCommand="{Binding BindingContext.DeleteCommand, Source={x:Reference RegUser}}"
+                            EditCommand="{Binding BindingContext.EditCommand, Source={x:Reference RegUser}}"
                             HeightRequest="90"/>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

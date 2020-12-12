@@ -16,8 +16,21 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            <Renderers:IconAwesomeLabelBase Grid.Column="0" Grid.Row="0" Icon="{Binding Icon}" TypeIcon="Light" Style="{StaticResource IconAwesomeLabelPrimary}" />
-            <Renderers:LabelBase Grid.Column="1" Grid.Row="0" TypeFont="Primary" Text="{Binding Title}" TextColor="White" VerticalOptions="Center" VerticalTextAlignment="Center" HorizontalOptions="Fill" />
+            <Renderers:IconAwesomeLabelBase 
+                Grid.Column="0" 
+                Grid.Row="0" 
+                Icon="{Binding Icon}" 
+                TypeIcon="Light" 
+                Style="{StaticResource IconAwesomeLabelPrimary}" />
+            <Renderers:LabelBase 
+                Grid.Column="1" 
+                Grid.Row="0" 
+                TypeFont="Primary" 
+                Text="{Binding Title}" 
+                TextColor="White" 
+                VerticalOptions="Center"
+                VerticalTextAlignment="Center" 
+                HorizontalOptions="Fill" />
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
             </Grid.GestureRecognizers>
