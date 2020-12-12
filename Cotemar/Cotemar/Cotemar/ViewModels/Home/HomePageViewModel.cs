@@ -10,6 +10,7 @@ namespace Cotemar.ViewModels.Home
         #region commands
         public AsyncCommand UsersCommand { get; set; }
         public AsyncCommand MenuCommand { get; set; }
+        public AsyncCommand CutBoxCommand { get; set; }
         #endregion
 
         #region Constructor
@@ -28,6 +29,7 @@ namespace Cotemar.ViewModels.Home
             base.InitCommands();
             UsersCommand = new AsyncCommand(async () => await NavigationService.NavigateAsync("Users"));
             MenuCommand = new AsyncCommand(async () => await NavigationService.NavigateAsync("Customers"));
+            CutBoxCommand = new AsyncCommand(async () => await NavigationService.NavigateAsync("CutBox"));
         }
         #endregion
 
