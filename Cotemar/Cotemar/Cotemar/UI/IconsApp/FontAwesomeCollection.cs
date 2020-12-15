@@ -30,7 +30,7 @@ namespace Cotemar.UI.IconsApp
             Icons.Add(new Icon("Edit", '\uf044'));
             Icons.Add(new Icon("Back",'\uf053'));
             Icons.Add(new Icon("Camera", '\uf030'));
-
+            Icons.Add(new Icon("Dolar", '\uf155'));
 
         }
 
