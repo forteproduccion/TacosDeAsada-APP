@@ -15,13 +15,13 @@ namespace Cotemar.ViewModels.Users
     public class UsersPageViewModel : PageViewModelBase
     {
         #region varCommands
-        public AsyncCommand NewUser { get; set; }
         public ICommand DeleteCommand => new Command(async (item) => await DeleteCommandExecute(item));
         public ICommand EditCommand => new Command(async (item) => await EditCommandExecute(item));
         #endregion
 
         #region Collections
-        public ObservableCollection<UsersModel> Users { get; set; }
+        public ObservableCollection<UsersModel> Users { get; set; } 
+        public AsyncCommand NewUser { get; set; }
         #endregion
 
         #if Testing
@@ -37,10 +37,8 @@ namespace Cotemar.ViewModels.Users
         #region Init Methods
         private void Testing() {
             test = new Testing.TestClass();
-            System.Drawing.Color c1 = new System.Drawing.Color();
-            System.Drawing.Color c2 = new System.Drawing.Color();
-            c1 = System.Drawing.Color.FromArgb(222,222,222);
-            c2 = System.Drawing.Color.FromArgb(243,243,243);
+            System.Drawing.Color c1 = System.Drawing.Color.FromArgb(222,222,222);
+            System.Drawing.Color c2 = System.Drawing.Color.FromArgb(243,243,243);
             var aux = true;
             foreach (var item in test.usrsTest) 
             {
@@ -85,10 +83,11 @@ namespace Cotemar.ViewModels.Users
         {
             if (item is UsersModel detail)
             {
-                
+                await NavigationService.NavigateAsync("NewUser",new NavigationParameters{ { "User", detail} });
             }
         }
 
         #endregion 
+
     }
 }

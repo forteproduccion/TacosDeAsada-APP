@@ -67,5 +67,14 @@ namespace Cotemar.ViewModels.Users
             }
         }
         #endregion
+
+        #region Navigation Methods
+        public override void OnNavigatedTo(INavigationParameters parameters)
+        { 
+            base.OnNavigatedTo(parameters);
+            user = parameters.GetValue<UsersModel>("User");
+            
+        }
+        #endregion
     }
 }

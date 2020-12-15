@@ -87,6 +87,7 @@
                     Grid.Column="0"
                     Grid.Row="2"/>
             <Entry  
+                    
                     Text="{Binding user.Password}"
                     Margin="36,0"
                     Placeholder="Contraseña"

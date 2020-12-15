@@ -8,7 +8,6 @@ namespace Cotemar.UI.ItemsCollectionView
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ItemUserCollectionView : Grid
     {
-
         public ItemUserCollectionView()
         {
             InitializeComponent();
